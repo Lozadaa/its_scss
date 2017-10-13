@@ -1,0 +1,95 @@
+.ag-icon {
+  position: relative;
+  top: 7px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  float: left;
+  display: block;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  opacity:0.2;
+  /* This is required */
+  &.icon-supplies {
+    background: image-url("supplies");
+    background-size: cover;
+  }
+  &.icon-cash {
+    background: image-url("cash");
+    background-size: cover;
+  }
+  &.icon-persons {
+    background: image-url("persons");
+    background-size: cover;
+  }
+  &.icon-work {
+    background: image-url("work");
+    background-size: cover;
+  }
+  &.icon-config {
+    background: image-url("config");
+    background-size: cover;
+  }
+  &.icon-calendar {
+    background: image-url("calendar") no-repeat;
+    background-size: cover;
+  }
+  &.normal {
+    width: 28px;
+    height: 28px;
+    background-size: 28px 28px;
+    padding-top:10px;
+    @include responsive("max-width:1300px") {
+      background-size: 20px 20px;
+      padding-top:25px;
+      padding-right: 10px;
+      padding-left: 40px;
+    }
+    background-repeat:no-repeat !important;
+  }
+
+  &.small {
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+    background-repeat:no-repeat !important;
+
+  }
+  &.medium {
+    width: 64px;
+    height: 64px;
+  }
+  &.large {
+    width: 128px;
+    height: 128px;
+  }
+  &.active{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    opacity:1;
+  }
+}
+
+.gly-menu{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  position: relative;
+  top: 7px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  float: right;
+  right: 40px;
+  display: block;
+  width: 28px;
+  height: 28px;
+  padding-top:10px;
+  opacity: 0.5;
+  &.active{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    color:$secundary-color;
+  }
+}

@@ -1,0 +1,25 @@
+$font_name: "OpenSans";
+
+//Generate
+@each $name in 'Regular' 'Light' 'Italic' 'LightItalic' 'ExtraBold' 'Semibold' 'SemiboldItalic' 'Bold' {
+  @font-face {
+    font-family: '#{$font_name}';
+    @if $name != 'Regular'{
+      font-family: '#{$font_name}-#{$name}';
+    }
+    src:font-url('#{$font_name}-#{$name}.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+/* FONT FAMILY CUSTOM FONT */
+@mixin set_family($typo: $font_name){
+  @if $typo == $font_name{
+    font-family: $typo;
+  }@else{
+    font-family: '#{$font_name}-#{$typo}';
+  }
+}
+
+
