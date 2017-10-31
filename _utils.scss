@@ -1,3 +1,112 @@
 .bloq-mayus{
   text-transform: uppercase;
 }
+
+@for $i from 1 through 20 {
+
+  .margin-top-#{$i} {
+    margin-top: #{$i}vh;
+  }
+
+  .margin-left-#{$i} {
+    margin-left: #{$i}vw;
+  }
+
+  .margin-bottom-#{$i} {
+    margin-bottom: #{$i}vh;
+  }
+
+  .add-padding-bottom-#{$i} {
+    padding-bottom: #{$i}vh;
+  }
+
+  .add-padding-top-#{$i} {
+    padding-top: #{$i}vh;
+  }
+
+  .add-padding-right-#{$i} {
+    padding-right: #{$i}vw;
+  }
+
+  .add-padding-left-#{$i} {
+    padding-right: #{$i}vw;
+  }
+
+}
+
+.light-italic{
+  @include set_family('LightItalic');
+}
+
+.bold{
+  @include set_family('Bold');
+}
+
+.semibold{
+  @include set_family('Semibold');
+}
+
+.light{
+  @include set_family('Light');
+}
+
+.clear-horizontal-padding{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  .col-md-12,.col-md-11{
+    padding-left:0 !important;
+  }
+}
+
+.clear-vertical-padding{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  .col-md-12,.col-md-11{
+    padding-left:0 !important;
+  }
+}
+
+.clear-horizontal-margin{
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.full-width{
+  width:100% !important;
+}
+
+.width-95{
+  width: 95% !important;
+}
+
+.center-text{
+  text-align:center !important;
+}
+
+.add-padding-top-1-5 {
+  padding-top: 1.5vh;
+}
+
+.add-padding-bottom-1-5 {
+  padding-bottom: 1.5vh;
+}
+
+.half-width{
+  width: 50% !important;
+}
+
+.pointer{
+  cursor:pointer;
+}
+
+.without-border-radius{
+  border-radius: 0 !important;
+}
+
+.black{
+  color:black!important;
+}
+
+.full-height{
+  width: 100% !important;
+}
